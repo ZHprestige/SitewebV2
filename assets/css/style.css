@@ -774,9 +774,6 @@ a:focus.service-btn{
 .project{
 	padding: 50px 0 ;
 }
-.project-details{
-	
-}
 .project-content {
     margin-top:62px;
 }
@@ -1505,11 +1502,7 @@ a:active.learn-btn{
 	-o-transition:all 0.2s linear;
     transition: all 0.2s linear;
 }
-.foot-menu   li a,
-.foot-menu   li a:hover,
-.foot-menu   li a:focus{
-	
-}
+
 .foot-menu  li {
 	position:relative;
 	padding-left:42px;

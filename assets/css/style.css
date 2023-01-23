@@ -71,7 +71,10 @@ p {
 	margin: 0;
 	font-size:14px;
 }
-img{	border:none;max-width:100%; height:auto;}
+img
+{	border:none;
+	max-width:100%; 
+	height:auto;}
 ul{
 	padding: 0;
     margin: 0;
@@ -721,7 +724,21 @@ a:focus.service-btn{
 	padding: 98px 0 81px;
 	max-height: 100%;
 }
- 
+
+.bpm-img {
+    margin-right: 5px;
+	border-radius:50%;
+	-webkit-transition: .5s; 
+	-moz-transition:.5s; 
+	-ms-transition:.5s; 
+	-o-transition:.5s;
+    transition: .5s;
+}
+.bpm-img img{
+	max-width: 100px;
+
+
+}
 
 
 /*-------------------------------------
@@ -805,7 +822,7 @@ a:focus.service-btn{
     width:auto;
 }
 .isotope .item {
-	float: left;
+	
 	height: 286px;
 	position:relative;
 	overflow:hidden;
@@ -855,17 +872,18 @@ a:focus.service-btn{
 }
 .isotope-overlay h3 a,.isotope-overlay  a{
 	color:#fff;	
-	font-size:24px;
-	font-family: 'Lato', sans-serif;
+	font-size:30px;
+	font-family: 'poppins', sans-serif;
 }
 .isotope-overlay h3 a{
 	margin-top: 20px;
 }
 .isotope-overlay p{
 	color:#fff;	
-	font-size:14px;
-	font-family: 'Lato', sans-serif;
+	font-size:20px;
+	font-family: 'poppins', sans-serif;
 	margin-top: 15px;
+	padding: 10px;
 }
 .isotope .item:hover .isotope-overlay{
 	-webkit-transform:scale(1);
@@ -881,11 +899,12 @@ a:focus.service-btn{
 	margin-top: 49px;
 	letter-spacing: 1.2px;
 }
+
 .project-view {
     background: rgb(255, 121, 0);
     border: 1px solid rgb(255, 121, 0);
-    width:185px;
-    height:52px;
+    width: 200px;
+    height:54px;
     line-height: 50px;
     white-space: nowrap;
    	text-align: center;
@@ -1590,6 +1609,117 @@ a:active.learn-btn{
 	line-height: 1.7;
 }
 
+/*-------------------------------------
+		grid produit 
+
+--------------------------------------*/
+  .grid-container {
+	--s: 150px; /* control the size */
+	  /* control the gap */
+	--f: 1.5;   /* control the scale factor */
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(7,auto);
+	top: 50%;
+	position: relative;
+	
+
+  }
+
+  .grid-container {
+
+  }
+  
+  .grid-item1 {
+	background: rgb(2,67, 125);
+	text-align: center;
+	border: black 1px solid;
+	width: 150px;
+	height: 100px ;
+	color:#fff;
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.7;
+
+  }
+
+
+ .grid-container .grid-item1:hover{ 
+  margin: 0;
+  min-height: 100px;
+  display: grid;
+  place-content: center;
+  background: rgb(255, 121, 0);  
+}
+
+.moduleDemo-btn{
+	position:relative;
+    margin: 50px;
+	text-align-last: center;
+
+}
+.module{
+	
+    background-color: #f9faff;
+}
+.mobile{
+	background-image: url(../images/produits/gec/gecCourriers.png);
+	background-size: cover;
+}
+.product-bo-page-img img{
+	position:relative;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.product-page-content{
+	padding: 45px 0 0;
+}
+.product-page{
+	padding: 115px 0 90px;
+}
+.product-page-img img {
+   float: left;
+   width: 100%;
+   max-width: fit-content;
+}
+.product-page-txt h2{
+	color:#4d4e54;
+	font-size:30px;
+	font-family: 'Playfair Display', serif;
+	text-transform:capitalize;
+	font-weight: 600;
+	padding: 16px 0 20px 0;
+}
+.product-page-txt p {
+	color:#888;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.7;
+	margin: 40px;
+	text-align: center;
+	
+	
+}
+.product-page-text p{
+	color: #888;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+	text-align: center;
+	padding: 30px 0;
+}
+.product-page-content ul li{
+	list-style: circle;
+	color:#4d4e54;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	padding-left: 20px;
+	line-height: 1.7;
+}
+   
 
 /*===============================
     Nos Services
@@ -1603,8 +1733,9 @@ a:active.learn-btn{
 	padding: 115px 0 90px;
 }
 .service-conseil-img img {
-    box-shadow: 0 0 20px rgba(112,134,230,.2);
+    box-shadow: 0 0 2px rgba(112,134,230,.2);
     height: 435px;
+	
 }
 .service-conseil-txt h2{
 	color:#4d4e54;
@@ -1619,6 +1750,7 @@ a:active.learn-btn{
 	font-size: 16px;
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.7;
+	margin: 50px;
 }
 .service-conseil-text p{
 	color: #888;
@@ -1634,6 +1766,8 @@ a:active.learn-btn{
 	padding-left: 20px;
 	line-height: 1.7;
 }
+
+
 
 
 /*serviceintegration*/

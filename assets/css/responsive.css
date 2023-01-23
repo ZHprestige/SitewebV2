@@ -54,6 +54,10 @@
 	.blog-single-musiq {left: 22%;}
 	.comment-body {max-width: 450px;}
 	.children { padding-left: 0;}
+	.grid-container{
+		grid-template-columns: repeat(4,auto);
+		
+	}
 
 
 }/*max-width:991px*/
@@ -148,6 +152,9 @@
 
 @media screen and (max-width: 580px){
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {width: 106%;}
+	.grid-container{
+		grid-template-columns: repeat(3,auto);
+	}
 }/*max-width:580px*/
 
 @media screen and (max-width: 540px){

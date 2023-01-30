@@ -312,7 +312,7 @@ ul li ul.dropdown{
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
-	min-width: 160px;
+	min-width: 250px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	padding: 12px 16px;
 	z-index: 9999;
@@ -324,6 +324,7 @@ ul li:hover ul.dropdown{
 }
 ul li ul.dropdown li{
 	display: block;
+	padding: 15px;
 	
 }
 
@@ -371,6 +372,11 @@ ul li ul.dropdowntest li{
     background-position: center;
 	
 }
+.single-slide-item.slide-1{
+	width: max-content;
+	height: fit-content;
+}
+
 .single-slide-item h2 {
 	color:#fff;
 	font-size:70px;
@@ -417,21 +423,9 @@ ul li ul.dropdowntest li{
 	 color: #fff;
 	 border: 1px solid #fff;
 }
-.single-slide-item.slide-1 {
-	background-image:url(../../assets/images/banner/banner1.jpg);
-	position:relative;
-	z-index:1;
-}
-#slide1 iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	max-width: 100%;
-	max-height: fit-content;
-}
+
+
+
 .single-slide-item.slide-2 {
 	background-image:url(../../assets/images/banner/banner1.jpg);
 	position:relative;
@@ -455,6 +449,16 @@ ul li ul.dropdowntest li{
 .single-slide-item-img img{
 	width:auto;
 	height:705px;
+}
+.single-slide-item.slide-1:before{
+	background:rgba(2, 67, 125,0.5);
+	position:absolute;
+	left:0;
+	top:0;
+	width: 1400px;;
+	height: 900px;
+		content:'';
+	z-index:-1;
 }
 /* .single-slide-item */
 
@@ -643,6 +647,9 @@ ul li ul.dropdowntest li{
     position: relative;
     padding-top: 26px;
 	padding-bottom: 20px;
+	transform: translate3d(-2508px, 0px, 0px);
+    transition: all 0.5s ease 0s;
+    width: 7980px;
 }
 
 /*-------------------------------------
@@ -675,16 +682,7 @@ ul li ul.dropdowntest li{
 	z-index: 1;
 	
 }
-.about-us-img:before{
-	position: absolute;
-	content: " ";
-	top:auto;
-	left:-23px;
-	border: 2px solid #ebecfb;
-	width: 125%;
-	height: 100%;
-	z-index: -1;
-}
+
 /*-------------------------------------
 		6. Service
 --------------------------------------*/
@@ -2038,5 +2036,30 @@ Products pages
 	border:1px solid rgb(225, 121, 0);
 	border-radius:50%;
 }
+#sticky-button {
+	position: fixed;
+	bottom: 30px;
+	right: 100px;
+	width: fit-content;
+    line-height: 40px;
+    height: 40px;
+	bottom: 30px;
+	z-index: 2;
+	background:rgb(225, 121, 0);
+	border:1px solid rgb(225, 121, 0);
+	border-radius:5px;
+	-webkit-transition: .5s; 
+	-moz-transition:.5s; 
+	-ms-transition:.5s; 
+	-o-transition:.5s;
+    transition: .5s;
+	
+  }
+  #sticky-button a {
+	color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+
 
 /*========================Thank you=================

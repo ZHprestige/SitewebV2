@@ -678,11 +678,11 @@ ul li ul.dropdowntest li{
 .about-us-img:before{
 	position: absolute;
 	content: " ";
-	top:55px;
+	top:auto;
 	left:-23px;
 	border: 2px solid #ebecfb;
 	width: 125%;
-	height: 90%;
+	height: 100%;
 	z-index: -1;
 }
 /*-------------------------------------

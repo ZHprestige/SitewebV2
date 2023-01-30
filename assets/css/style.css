@@ -246,6 +246,7 @@ html,body{
     margin-top: 15px;
 }/* sticky */
 
+
 /* wrapper-sticky */
 
 /* navbar-default */
@@ -326,14 +327,41 @@ ul li ul.dropdown li{
 	
 }
 
+
+
+
+ul li ul.dropdowntest{
+	display: inline-flex;
+	position: absolute;
+	background-color: #f9f9f9;
+	margin-bottom: 40px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 0;
+	z-index: 1;
+	
+	
+}
+ul li:hover ul.dropdowntest{
+	display:inline-flex;
+	align-self: center;	/* Display the dropdowntest */
+    
+
+}
+ul li ul.dropdowntest li{
+	display:list-item;
+	
+}
+
 /*-------------------------------------
 		4. Slider
 --------------------------------------*/
+
 .header-slider-area {
     position: relative;
     z-index: 1;
 
 }
+
 /* .single-slide-item */
 .single-slide-item {
     padding-top: 184px;
@@ -393,6 +421,16 @@ ul li ul.dropdown li{
 	background-image:url(../../assets/images/banner/banner1.jpg);
 	position:relative;
 	z-index:1;
+}
+#slide1 iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 100%;
+	max-height: fit-content;
 }
 .single-slide-item.slide-2 {
 	background-image:url(../../assets/images/banner/banner1.jpg);
@@ -1008,7 +1046,7 @@ a:focus.service-btn{
 .clients-area .item {
     padding: 0 13px;
 }
-z
+
 
 .owl-carousel .owl-wrapper {
 	display: table!important;
@@ -1017,13 +1055,15 @@ z
 	display: table-cell!important;
 	float: none!important;
 	vertical-align: middle!important;
+	padding: 30px;
+	max-width: 100%;
   }
   .clients-carousel .owl-item .item{
 	text-align: center!important;
 	padding: 15px 30px!important;
   }
   .clients-carousel .owl-item img{
-	max-width: 180px!important;
+	max-width: 100px!important;
 	max-height: 50px!important;
 	display: inline-block!important;
   }
@@ -1661,8 +1701,19 @@ a:active.learn-btn{
 .module{
 	
     background-color: #f9faff;
+	
 }
 .mobile{
+	background-color: #f9faff;
+
+}
+.middle{
+	background-color: #f9faff;
+
+}
+
+
+.demandeDemo{
 	background-image: url(../images/produits/gec/gecCourriers.png);
 	background-size: cover;
 }
@@ -1675,7 +1726,7 @@ a:active.learn-btn{
 }
 
 .product-page-content{
-	padding: 45px 0 0;
+	padding: 15px 0 0;
 }
 .product-page{
 	padding: 115px 0 90px;
@@ -1684,6 +1735,7 @@ a:active.learn-btn{
    float: left;
    width: 100%;
    max-width: fit-content;
+
 }
 .product-page-txt h2{
 	color:#4d4e54;
@@ -1703,6 +1755,16 @@ a:active.learn-btn{
 	
 	
 }
+ .sous-image p {
+	color:#888;
+	font-size: 12px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.7;
+	margin: 15px;
+	text-align: center;
+	
+	
+}
 .product-page-text p{
 	color: #888;
     font-size: 10px;
@@ -1716,8 +1778,14 @@ a:active.learn-btn{
 	color:#4d4e54;
 	font-size: 16px;
 	font-family: 'Poppins', sans-serif;
-	padding-left: 20px;
+	padding-left:20px;
 	line-height: 1.7;
+
+}
+.product-page-content ul{
+	padding-left: 10px;
+
+
 }
    
 
@@ -1727,7 +1795,7 @@ a:active.learn-btn{
 /*serviceconseil*/
 
 .service-conseil-content{
-	padding: 90px 0 0;
+	padding: 15px 0 0;
 }
 .service-conseil{
 	padding: 115px 0 90px;

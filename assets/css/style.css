@@ -68,13 +68,17 @@ h1,h2,h3,h4,h5,h6 {
 	color: #fff;
 }
 p {
-	margin: 0;
-	font-size:14px;
+	color: #888;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
 }
 img
 {	border:none;
 	max-width:100%; 
-	height:auto;}
+	height:auto;
+	margin-top: -5px;
+}
 ul{
 	padding: 0;
     margin: 0;
@@ -102,6 +106,8 @@ html,body{
 }
 
 /*=============Style css=========*/
+
+
 
 /*-------------------------------------
 		2. Header
@@ -204,6 +210,7 @@ html,body{
 --------------------------------------*/
 #menu{
 	z-index: 999;
+	
 }
 /* navbar-brand */
 .navbar-brand,
@@ -223,7 +230,7 @@ html,body{
 /* sticky */
 .sticky{
 	background: rgb(255, 255, 255);
-	padding: 10px 0px 0px;
+	padding: 5px 0px ;
 	height:80px;
 	color: #fff;
 }
@@ -272,9 +279,9 @@ html,body{
 	color: rgb(2, 67, 125);
 	outline: 0;
 	font-weight:700;
-	margin: 20px;
-	padding-bottom: 25px;
-	padding-left: 27px;
+	margin: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
 
 }
 
@@ -286,9 +293,9 @@ html,body{
     color: rgb(2, 67, 125);
 	font-weight:700;
 	font-family: 'Lato', sans-serif;
-	margin-top: 33;
-	padding-bottom: 25px;
-	padding-left: 27px;
+	margin-top: 10;
+	padding-bottom: 10px;
+	padding-left: 10px;
 }/* navbar-default */
 
 /* navbar-toggle*/
@@ -363,6 +370,21 @@ ul li ul.dropdowntest li{
 
 }
 
+video {
+	position: inherit;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+	object-fit: fill;
+}
+
+
+  #holder{
+	width: 1900px;
+	height: 700px;
+	position: relative;
+  }
 /* .single-slide-item */
 .single-slide-item {
     padding-top: 184px;
@@ -549,38 +571,39 @@ ul li ul.dropdowntest li{
 /*-------------------------------------
 		4. We-do
 --------------------------------------*/
-.we-do{
-	padding: 50px 0 90px;
-	background-color: #f9faff;
-}
 
 /* section-header */
 .section-header h2{
-	color: #44454f;
-	font-size: 30px;
+
+	font-size: 70px;
 	font-family: 'Playfair Display', serif;
-	font-weight: 700;
+	font-weight: 800;
+	background: linear-gradient(100deg,#02437d 10%,#fe6a00 100%);
+background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 .section-header h2 span{
 	color: #4d4e54;
 }
 .section-header p{
 	color: #888;
-	font-size: 16px;
+	font-size: 20px;
 	font-family: 'Poppins', sans-serif;
 	max-width: 1000px;
     margin: 0 auto;
     margin-top: 32px;
     line-height: 1.8;
+
 }/* section-header */
 
 
 /*single-we-do-box */
 .we-do-carousel {
-    padding-top: 60px;
+    padding-top: 20px;
 }
 .we-do-description {
-    padding: 55px 0 70px;
+    padding: 10px 5px 10px;
 }
 .single-we-do-box  {
     box-shadow:0 0 5px rgba(35,37,41,.4);
@@ -592,13 +615,12 @@ ul li ul.dropdowntest li{
 	-ms-transition:.5s; 
 	-o-transition:.5s;
     transition: .5s;
+	background:#fff;
+	min-height: 450px
 }
 
 /*we-do-description*/
-.single-we-do-box{
-	background:#fff;
-	min-height: 345px
-}
+
 /* we-do-info */
 .we-do-info {
 	font-family: 'Playfair Display', serif;
@@ -614,8 +636,7 @@ ul li ul.dropdowntest li{
     transition: .5s;
 }
 .we-do-topics {
-    margin-top: 32px;
-    margin-bottom: 27px;
+    margin: 0;
 }
 .we-do-topics h2 a{
 	color:#44454f;
@@ -645,8 +666,8 @@ ul li ul.dropdowntest li{
 /*owl carousel*/
 .owl-carousel .owl-stage {
     position: relative;
-    padding-top: 26px;
-	padding-bottom: 20px;
+    padding-top: 0px;
+	padding-bottom: 0px;
 	transform: translate3d(-2508px, 0px, 0px);
     transition: all 0.5s ease 0s;
     width: 7980px;
@@ -658,6 +679,7 @@ ul li ul.dropdowntest li{
 .about-us{
 	background: transparent;
 	padding: 50px 0 80px ;
+	
 }
 .about-us-txt{
 	margin-top: 103px;
@@ -688,11 +710,14 @@ ul li ul.dropdowntest li{
 --------------------------------------*/
 .service{
     padding: 10px 0 ;
+
 	
 }
-.service-single{
-	margin-bottom:10px;
+#services{
+	background: #f9faff;
+	padding-bottom: 20px;
 }
+
 .service-content-one{
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -723,10 +748,24 @@ ul li ul.dropdowntest li{
 	padding: 47px 0 25px;
 }
 .service-txt p {
-	color:#756c6a;	
-	font-size:16px;
-	font-family: 'Poppins', sans-serif;
-	line-height: 1.67;
+	color: #888;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
+.service-txt ul li{
+	list-style: circle;
+	list-style-position: inside;
+	color: #888;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+
+	float: left;
+
+}
+.service-txt ul {
+	padding-left: 20px;
 }
 a.service-btn,
 a:active.service-btn,
@@ -745,6 +784,20 @@ a:focus.service-btn{
 	box-shadow:0 5px 20px rgba(2,67,125,.8);
 	opacity: 2;
 
+}
+
+.single-service-box  {
+    box-shadow:0 0 5px rgba(35,37,41,.4);
+	overflow-x:hidden;
+	margin-top: 15px;
+	opacity:1;
+	-webkit-transition: .5s; 
+	-moz-transition:.5s; 
+	-ms-transition:.5s; 
+	-o-transition:.5s;
+    transition: .5s;
+	background:#fff;
+	min-height: 315px;
 }
 
 /*-------------------------------------
@@ -772,8 +825,6 @@ a:focus.service-btn{
 }
 .bpm-img img{
 	max-width: 100px;
-
-
 }
 
 
@@ -966,7 +1017,7 @@ a:focus.service-btn{
 .testemonial{
 	position:relative;
 	background: #f9faff;
-	padding-top: 116px;
+	padding-bottom: 40px;
 }
 
 /*testemonial-carousel*/
@@ -982,7 +1033,7 @@ a:focus.service-btn{
     border: 2px solid #fe6a00;
 }
 .testemonial .owl-theme .owl-nav.disabled+.owl-dots {
-    padding-bottom: 110px;
+    padding-bottom: 10px;
     margin-top: 5px;
 }
 .testemonial .owl-theme .owl-dots .owl-dot span {
@@ -1035,10 +1086,10 @@ a:focus.service-btn{
 --------------------------------------*/
 .clients{
 	background: transparent;
-	padding: 20px 0 ;
+	padding: 0 0 ;
 }
 .clients-area {
-    padding: 33px 0 ;
+    padding: 0 ;
 	position:relative;
 }
 .clients-area .item {
@@ -1137,12 +1188,12 @@ a:active.learn-btn{
 		14. Contact
 --------------------------------------*/
 .contact {
-    padding: 20px 0 120px;
+    padding: 20px 0px;
     background:url(../../assets/images/footer/map.jpg)no-repeat;
 	background-position:center;
 	background-size: cover;
 	position: relative;
-	margin-top: 0px;
+	
 }
 .contact:before{
 	background:rgba(2,67,125,.3);
@@ -1160,18 +1211,21 @@ a:active.learn-btn{
 	position: relative;
 	color: #4d4e54;
 }
-.section-header.contact-head h2,
-.section-header.contact-head p{
+.product-page-txt.contact-head h2,
+.product-page-txt.contact-head p{
 	position: relative;
 	color: #fff;
+	
 }
 .section-header.contact-head p{
 	position: relative;
 	color: #fff;
 }
 .section-header.contact-headp p{
-	position: relative;
 	color: #888;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
 }
 
 
@@ -1331,7 +1385,7 @@ a:active.learn-btn{
 .new-project {
     padding: 72px 0 72px;
     background-image: url("../images/produits/newproject.png") ;
-	contain: content;
+	
 }
 .single-new-project h3{
 	color: #fff;
@@ -1370,9 +1424,10 @@ a:active.learn-btn{
 .hm-footer{
     padding-bottom:68px;
     background: #212135;
+	margin-top: -10px;
 }
 .hm-footer-details {
-    margin-top: 120px;
+    margin-top: 60px;
 }
 .hm-footer-widget{
 	margin-bottom:30px;
@@ -1665,6 +1720,8 @@ a:active.learn-btn{
   }
 
   .grid-container {
+	position:relative;
+	margin-left: 100px;
 
   }
   
@@ -1673,7 +1730,15 @@ a:active.learn-btn{
 	text-align: center;
 	border: black 1px solid;
 	width: 150px;
-	height: 100px ;
+	height: 80px ;
+	color:#fff;
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.7;
+
+  }
+  .grid-item1 a {
+	
 	color:#fff;
 	font-size: 15px;
 	font-family: 'Poppins', sans-serif;
@@ -1684,7 +1749,7 @@ a:active.learn-btn{
 
  .grid-container .grid-item1:hover{ 
   margin: 0;
-  min-height: 100px;
+  min-height: 80px;
   display: grid;
   place-content: center;
   background: rgb(255, 121, 0);  
@@ -1699,6 +1764,7 @@ a:active.learn-btn{
 .module{
 	
     background-color: #f9faff;
+	padding-bottom: 30px;
 	
 }
 .mobile{
@@ -1741,42 +1807,37 @@ a:active.learn-btn{
 	font-family: 'Playfair Display', serif;
 	text-transform:capitalize;
 	font-weight: 600;
-	padding: 16px 0 20px 0;
+	padding: 20px 0 16px 0;
 }
 .product-page-txt p {
-	color:#888;
-	font-size: 20px;
-	font-family: 'Poppins', sans-serif;
-	line-height: 1.7;
-	margin: 40px;
-	text-align: center;
-	
+	color: #888;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+	padding-top: 15px;
 	
 }
  .sous-image p {
-	color:#888;
-	font-size: 12px;
-	font-family: 'Poppins', sans-serif;
-	line-height: 1.7;
-	margin: 15px;
-	text-align: center;
+	color: #888;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
 	
 	
 }
 .product-page-text p{
 	color: #888;
-    font-size: 10px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.7;
-	text-align: center;
-	padding: 30px 0;
 }
 .product-page-content ul li{
 	list-style: circle;
+	list-style-position: inside;
 	color:#4d4e54;
 	font-size: 16px;
 	font-family: 'Poppins', sans-serif;
-	padding-left:20px;
+	padding-left: 20px;
 	line-height: 1.7;
 
 }
@@ -1812,26 +1873,30 @@ a:active.learn-btn{
 	padding: 16px 0 20px 0;
 }
 .service-conseil-txt p {
-	color:#888;
-	font-size: 16px;
-	font-family: 'Poppins', sans-serif;
-	line-height: 1.7;
-	margin: 50px;
+	color: #888;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
 }
 .service-conseil-text p{
 	color: #888;
-    font-size: 10px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.7;
 }
 .service-conseil-content ul li{
 	list-style: circle;
-	color:#4d4e54;
-	font-size: 16px;
-	font-family: 'Poppins', sans-serif;
-	padding-left: 20px;
-	line-height: 1.7;
+	color: #888;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
 }
+.service-conseil-content ul{
+	padding-left: 10px;
+	margin-left: 100px;
+
+}
+
 
 
 
@@ -1841,7 +1906,7 @@ a:active.learn-btn{
 
 
 .service-integration-content{
-	padding: 90px 0 0;
+	padding: 0 20px 20px;
 	
 }
 
@@ -1861,10 +1926,10 @@ a:active.learn-btn{
 	padding: 16px 0 20px 0;
 }
 .service-integration-txt p {
-	color:#888;
-	font-size: 16px;
-	font-family: 'Poppins', sans-serif;
-	line-height: 1.7;
+	color: #888;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
 }
 .service-integration-text p{
 	color: #888;
@@ -1879,6 +1944,7 @@ a:active.learn-btn{
 	font-family: 'Poppins', sans-serif;
 	padding-left: 20px;
 	line-height: 1.7;
+	list-style-position: inside;
 }
 
 
@@ -1902,10 +1968,10 @@ a:active.learn-btn{
 	padding: 16px 0 20px 0;
 }
 .service-externalisation-txt p {
-	color:#888;
-	font-size: 16px;
-	font-family: 'Poppins', sans-serif;
-	line-height: 1.7;
+	color: #888;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
 }
 .service-externalisation-text p{
 	color: #888;

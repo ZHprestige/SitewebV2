@@ -51,7 +51,7 @@ font-family: 'Lato', sans-serif;
 body{
 	font-size:14px;
 	background:#fff;
-    max-width:1920px;
+    max-width: 1800px;
     margin:0 auto;
 	overflow-x:hidden;
 }
@@ -75,7 +75,7 @@ p {
 }
 img
 {	border:none;
-	max-width:100%; 
+	max-width:80%; 
 	height:auto;
 	
 }
@@ -107,7 +107,27 @@ html,body{
 
 /*=============Style css=========*/
 
-
+#background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	
+	background-size: cover;
+	filter: blur(5px);
+  }
+  
+  #popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	background-color: white;
+	padding: 20px;
+  }
 
 /*-------------------------------------
 		2. Header
@@ -382,8 +402,8 @@ video {
 
 
   #holder{
-	width: 1900px;
-	height: 600px;
+	width: 1400px;
+	height: 800px;
 	position: relative;
   }
 /* .single-slide-item */
@@ -679,7 +699,7 @@ background-clip: border-box;
 --------------------------------------*/
 .about-us{
 	background: transparent;
-	padding: 50px 0 80px ;
+	padding: 0;
 	
 }
 .about-us-txt{
@@ -700,11 +720,14 @@ background-clip: border-box;
     margin-top: 28px;
     margin-bottom: -18px;
 }
-.about-us-img  {
+.about-us-img   {
 	position: relative;
 	z-index: 1;
 	
 }
+.about-us-img img {
+	width: 80%
+	}
 
 /*-------------------------------------
 		6. Service
@@ -716,7 +739,7 @@ background-clip: border-box;
 }
 #services{
 	background: #f9faff;
-	padding-bottom: 20px;
+	padding-bottom: 0;
 }
 
 .service-content-one{
@@ -732,7 +755,7 @@ background-clip: border-box;
 }
 /*.service-txt*/
 .service-single {
-	max-width: 350px;
+	max-width: 250px;
     margin: 0 auto;
    	margin-bottom: 15px;
 	-webkit-transition: .5s; 
@@ -798,7 +821,7 @@ a:focus.service-btn{
 	-o-transition:.5s;
     transition: .5s;
 	background:#fff;
-	min-height: 315px;
+	min-height: 270px;
 }
 
 /*-------------------------------------
@@ -838,7 +861,7 @@ a:focus.service-btn{
 	
 	background-position:center;
 	background-size:cover;
-	padding: 10px 0 15px;
+	padding: 10px 0;
 }
 .statistics:before{
 	position:absolute;
@@ -1600,7 +1623,7 @@ a:active.learn-btn{
 --------------------------------------*/
 .footer-copyright {
 	background:#1a1a2a;
-	padding: 30px 0 35px;
+	padding: 20px 0;
 }
 .foot-copyright{
 	color:#8b8b8b;
@@ -1691,12 +1714,20 @@ a:active.learn-btn{
 /*-------------------------------------
 		ii. about-history
 --------------------------------------*/
-.about-history{
-	padding: 10px 0 90px;
-}
+
 .about-history-img img {
-    box-shadow: 0 0 20px rgba(112,134,230,.2);
-    height: 435px;
+    
+    width: auto;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+.about-history-img2 img {
+    
+    width: auto;
+	padding-top: 10px;
+	margin-top: 10px;
+
 }
 .about-history-txt h2{
 	color:#4d4e54;
@@ -1873,9 +1904,10 @@ a:active.learn-btn{
 	padding: 115px 0 90px;
 }
 .service-conseil-img img {
-    box-shadow: 0 0 20px rgba(112,134,230,.2);
-    height: 400px;
+
+    width:60%;
 	float: right;
+	margin-top: 10px;
 	
 }
 .service-conseil-txt h2{
@@ -1928,8 +1960,10 @@ a:active.learn-btn{
 	padding: 115px 0 90px;
 }
 .service-integration-img img {
-    box-shadow: 0 0 20px rgba(112,134,230,.2);
-    height: 400px;
+  
+	width:60%;
+	float: left;
+	margin-top: 10px;
 }
 .service-integration-txt h2{
 	color:#4d4e54;
@@ -2001,9 +2035,6 @@ Products pages
 }
 /*main-timeline*/
 
-.about-vission-content {
-    padding: 90px 0 0;
-}
 
 .about-vission2-content{
 	padding: 90px 0 0;

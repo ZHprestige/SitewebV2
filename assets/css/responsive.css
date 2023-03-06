@@ -27,6 +27,12 @@
 
 
 @media screen and (max-width:992px){
+	.about-history-img2 img {
+		width: 50%;
+		padding-top: 10px;
+		margin-top: 10px;
+		
+	}
     
 }/*max-width:992px*/
 
@@ -92,6 +98,9 @@
 	.product-page-img img {
 		display: none;
 	}
+	.about-history-img2 img {
+		display: none;
+	}
 	.menubar ul.nav.navbar-nav {display: inline-grid;}
 	.navbar-default .navbar-nav li a {font-size: 16px;padding: 0 25px;}
 	.navbar-collapse {border-top: 0;box-shadow: inset 0 1px 0 rgba(255,255,255,0);}
@@ -127,12 +136,11 @@
 	.sticky .navbar-default .navbar-nav li a:hover { color: #fff;
     	margin: 10px 0px;
 	}
-	.search span {left: 28px;}
-	.search input {left: 30px; margin-bottom: 30px;margin-top:10px;}
+
 	.carousel-control {position:absolute;top: 65%;left:0%;}
 	.carousel-control.right {left:10%;}
 	.single-slide-item h2 {font-size: 45px;}
-	.single-slide-item {padding-top: 100px;}
+	.single-slide-item {padding-top: 10px;}
 	.we-do-comment p {padding: 0 0px;}
 	.single-team-box {width:270px;}
 	.single-we-do-box {max-width: 350px;margin: 0 auto;margin-bottom: 30px;}
@@ -152,14 +160,33 @@
 	.main-timeline .timeline.timeline-ml-20{margin-left: -70px;}
 	.xtra-timeline.main-timeline:before {top: -2.8%;left:2.5%;height: 79%;}
 	
+
+	.about-history-img img {
+		width: 50%;
+		padding-top: 10px;
+		margin-top: 10px;
+		margin-left: 50px;
+	}
+	
+	
 }/*max-width:767px*/
 
 @media screen and (max-width: 680px){
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {width: 105%;}
 .product-page-img img {
 	display: none;
+	
+}
+.about-history-img img {
+    width: 50%;
+		padding-top: 10px;
+		margin-top: 10px;
+		margin-left: 50px;
 }
 
+.about-us-img img {
+	display: none;
+	}
 }/*max-width:680px*/
 @media screen and (max-width: 667px){
 	.header-right.pull-right {float: left!important;margin-top: 10px;}
@@ -175,6 +202,11 @@
 	.section-header h2 span {font-size: 20px;}
 	
 	.comment-body {max-width: 350px;}
+
+	.about-us-img img {
+		width: 60%;
+		align-content: center;
+		}
 }/*max-width:640px*/
 
 @media screen and (max-width: 580px){

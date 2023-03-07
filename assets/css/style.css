@@ -750,11 +750,7 @@ background-clip: border-box;
 /*-------------------------------------
 		6. Service
 --------------------------------------*/
-.service{
-    padding: 10px 0 ;
 
-	
-}
 #services{
 	background: #f9faff;
 	padding-bottom: 0;
@@ -840,6 +836,7 @@ a:focus.service-btn{
     transition: .5s;
 	background:#fff;
 	min-height: 270px;
+	max-width: 250px;
 }
 
 /*-------------------------------------
@@ -952,10 +949,10 @@ a:focus.service-btn{
 }
 .isotope .item {
 	
-	height: 286px;
+	height: 200px;
 	position:relative;
 	overflow:hidden;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 .isotope .item.big-height {height: 604px;}
 /*.item img*/
@@ -1822,13 +1819,14 @@ a:active.learn-btn{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 10px;
 	
 
 }
 .module{
 	
     background-color: #f9faff;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	
 }
 .mobile{

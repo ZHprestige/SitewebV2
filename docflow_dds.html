@@ -153,8 +153,50 @@
      	            </p>
 	            </div>
 	     	<!--/.section-header-->
+			 <div class="moduleDemo-btn">
+				<button class="project-view" id="myBtn">Obtenir l'affiche du produit</button>
+			</div>
+	</section>
+		
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	
+		<!-- Modal content -->
+		<div class="modal-content">
+		  <span class="close">&times;</span>
+		  
+		  <iframe width="600px" height="400px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=gmj18Y3eq0KAHBzFool7taMYUbgPKIpErnxoilPi8KNUQkRWQjlQU0NHTlhRTkVPTDIwR0hIUDM3VC4u&embed=true&lang=fr-FR" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+	
 		</div>
-</section>	
+	  
+	  </div>	
+	  <script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+		
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+		
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+		
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+		
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+		
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+			modal.style.display = "none";
+		  }
+		}
+	</script>
 <div class="container">
 	
 	<div class="product-page-txt text-center ">
@@ -176,11 +218,7 @@
 				La solution DDS assure la réactivité de votre établissement en vous évitant le blocage et en vous permettant d'accélérer la dématérialisation de vos processus d'une manière simple, sécurisée et de n'importe où.
 			</p>
 			</div>
-			<div class="moduleDemo-btn">
-				<a href="contact.html"  class="project-view">Demander une démo
 		
-				</a>
-			</div><!--/.project-btn-->
 		</div>
 		
 	</div>	
@@ -220,11 +258,7 @@
 						
 						
 					</div>
-					<div class="moduleDemo-btn">
-						<a href="contact.html"  class="project-view">Demander une démo
-
-						</a>
-					</div><!--/.project-btn-->
+			
 				</div>
 			</div>
 </section>
@@ -412,11 +446,15 @@
 					
 				<div class="service-content-one">
 					<div class="row">
-						<div class="col-sm-2 col-xs-12">
+						
+						<div class="col-sm-2   col-sm-12">
 							<div class="service-single text-center">
-								<div class="service-img">
+								<a href="docflow_gec.html">
+									<div class="service-img">
 									<img src="assets/images/LOGOs Suite Docflow  (2)/Docflow CEG.png" alt="image of product" />
 								</div><!--/.service-img-->
+								</a>
+								
 								<div class="service-txt">
 									<h2>
 										<a href="docflow_gec.html">DocFlow Courrier-GEC </a>
@@ -429,11 +467,14 @@
 								</div><!--/.service-txt-->
 							</div><!--/.service-single-->
 						</div><!--/.col-->
-						<div class="col-sm-2 col-xs-12">
+						<div class="col-sm-2 col-sm-12">
 							<div class="service-single text-center">
-								<div class="service-img">
+								<a href="docflow_process.html">
+									<div class="service-img">
 									<img src="assets/images/LOGOs Suite Docflow  (2)/Docflow Process.png" alt="image of service" />
-								</div><!--/.service-img-->
+									</div><!--/.service-img-->
+								</a>
+								
 								<div class="service-txt">
 									<h2>
 										<a href="docflow_process.html">DocFlow Process-BPM</a>
@@ -446,11 +487,14 @@
 								</div><!--/.service-txt-->
 							</div><!--/.service-single-->
 						</div><!--/.col-->
-						<div class="col-sm-2 col-xs-12">
+						<div class="col-sm-2 col-sm-12">
 							<div class="service-single text-center">
-								<div class="service-img">
+								<a href="docflow_ged.html">
+										<div class="service-img">
 									<img src="assets/images/LOGOs Suite Docflow  (2)/Docflow GED.png" alt="image of service" />
 								</div><!--/.service-img-->
+							</a>
+							
 								<div class="service-txt">
 									<h2>
 										<a href="docflow_ged.html">DocFlow Document-GED</a>
@@ -464,11 +508,14 @@
 								</div><!--/.service-txt-->
 							</div><!--/.service-single-->
 						</div><!--/.col-->
-						<div class="col-sm-2 col-xs-12">
+						<div class="col-sm-2 col-sm-12">
 							<div class="service-single text-center">
-								<div class="service-img">
-									<img src="assets/images/LOGOs Suite Docflow  (2)/Docflow Tracking.png" alt="image of service" />
-								</div><!--/.service-img-->
+								<a href="docflow_tracking.html">
+									<div class="service-img">
+										<img src="assets/images/LOGOs Suite Docflow  (2)/Docflow Tracking.png" alt="image of service" />
+									</div><!--/.service-img-->
+								</a>
+								
 								<div class="service-txt">
 									<h2>
 										<a href="docflow_tracking.html">DocFlow Tracking-GET</a>
@@ -481,11 +528,14 @@
 								</div><!--/.service-txt-->
 							</div><!--/.service-single-->
 						</div><!--/.col-->
-						<div class="col-sm-2 col-xs-12">
+						<div class="col-sm-2 col-sm-12">
 							<div class="service-single text-center">
-								<div class="service-img">
+								<a href="docflow_archive.html">
+									<div class="service-img">
 									<img src="assets/images/LOGOs Suite Docflow  (2)/Docflow Archive.png" alt="image of service" />
 								</div><!--/.service-img-->
+								</a>
+								
 								<div class="service-txt">
 									<h2>
 										<a href="docflow_archive.html">DocFlow archive-GEA</a>
@@ -498,11 +548,14 @@
 								</div><!--/.service-txt-->
 							</div><!--/.service-single-->
 						</div><!--/.col-->
-						<div class="col-sm-2 col-xs-12">
+						<div class="col-sm-2 col-sm-12">
 							<div class="service-single text-center">
-								<div class="service-img">
-									<img src="assets/images/LOGOs Suite Docflow  (2)/Docflow DDS.png" alt="image of service" />
-								</div><!--/.service-img-->
+								<a href="docflow_dds.html">
+									<div class="service-img">
+										<img src="assets/images/LOGOs Suite Docflow  (2)/Docflow DDS.png" alt="image of service" />
+									</div><!--/.service-img-->
+								</a>
+								
 								<div class="service-txt">
 									<h2>
 										<a href="docflow_dds.html">DocFlow Digital Sign-DDS</a>
@@ -527,22 +580,26 @@
 		</div><!--/.container-->
 	
 	</section><!--/.produit-->
-<section class="demandeDemo">
-		<div class="row">
-			<div class="product-page-content">
-
-						<div class="product-page-txt text-center">
-							<h2> Vous souhaitez avoir plus d'informations ou assister à une démonstration ?  
-							</h2>
-						</div><!--/.product-page-txt-->
-			</div>
+	<!--produits end-->
+	</section>
+	
+	<section class="demandeDemo">
+				<div class="row">
+					<div class="product-page-content">
+	
+								<div class="product-page-txt text-center">
+									<h2> Vous souhaitez avoir plus d'informations ou assister à une démonstration ?  
+									</h2>
+								</div><!--/.product-page-txt-->
+					</div>
+					
+					<div class="moduleDemo-btn">
+						<a href="contact.html"  class="project-view">Demander une démo
+						</a>
+					</div><!--/.project-btn-->
+					</div>
+	</section>
 			
-			<div class="moduleDemo-btn">
-				<a href="contact.html"  class="project-view">Demander une démo
-				</a>
-			</div><!--/.project-btn-->
-			</div>
-</section>  
 		
 	
 		<!--hm-footer start-->

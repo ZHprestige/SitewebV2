@@ -51,7 +51,7 @@ font-family: 'Lato', sans-serif;
 body{
 	font-size:14px;
 	background:#fff;
-    max-width: 1800px;
+    max-width: 100%;
     margin:0 auto;
 	overflow-x:hidden;
 	
@@ -112,6 +112,8 @@ html,body{
 iframe {
 	display: block;
 	margin: 0 auto;
+	border-radius: 10px;
+	
   }
 /* The Modal (background) */
 .modal {
@@ -1475,7 +1477,7 @@ a:active.learn-btn{
 .hm-footer{
     padding-bottom:68px;
     background: #212135;
-	margin-top: -10px;
+	margin-top: 0;
 }
 .hm-footer-details {
     margin-top: 60px;
@@ -1774,17 +1776,10 @@ a:active.learn-btn{
 	grid-template-columns: repeat(6,auto);
 	top: 50%;
 	position: relative;
-	
-
-
+	justify-content: center;
   }
 
-  .grid-container {
-	position:relative;
-	margin-left: auto;
 
-  }
-  
   .grid-item1 {
 	background: rgb(2,67, 125);
 	text-align: center;
@@ -1819,7 +1814,8 @@ a:active.learn-btn{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	
 
 }

@@ -211,12 +211,10 @@
 
 @media screen and (max-width: 580px){
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {width: 106%;}
-	.grid-container{
-		grid-template-columns: repeat(3,auto);
-	}
+	
 	.grid-container{
 		grid-template-columns: repeat(2,auto);
-		margin-left: 50px;
+	
 		
 	}
 }/*max-width:580px*/

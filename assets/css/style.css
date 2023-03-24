@@ -136,7 +136,9 @@ iframe {
 	margin: auto;
 	padding: 20px;
 	border: 1px solid #888;
-	width: 600px;
+	width: 90%;
+	display: grid;
+	justify-content: center;
   }
   
   /* The Close Button */
@@ -1259,7 +1261,9 @@ a:active.learn-btn{
 	font-size: 25px;
 	margin-bottom: 10px;
 }
-
+.section-header.contact-headp{
+	background-image: url(../images/produits/gec/gecCourriers.png);
+}
 /*contact-head */
 .section-header.contact-headp h2,
 .section-header.contact-headp p{
